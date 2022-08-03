@@ -1,0 +1,368 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    background-image: url(../image/Shape-background.png);
+    background-repeat: no-repeat;
+    background-position: -170px 350px;
+    overflow: hidden;
+}
+
+body ::selection {
+    background-color: red;
+    color: white;
+}
+
+.main {
+    font-family: "Cairo", sans-serif;
+    margin: auto;
+    margin-top: 5%;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    height: 80vh;
+    padding: 45px;
+    border-radius: 20px;
+}
+
+header {
+
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: 700;
+}
+
+nav ul li a:hover , #contact{
+    background-color: white;
+    color: black;
+    transition: 0.3s;
+}
+
+#contact:hover {
+    background-color: white;
+    color: red;
+}
+
+h1 {
+    color: red;
+    cursor: pointer;
+    height: fit-content;
+    transition: 0.3s;
+    margin-left: 25px;
+}
+
+
+h1:hover {
+    color: rgb(247, 104, 104);
+}
+
+section {
+    margin-top: 245px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contener h2{
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.contener p {
+    font-size: 1.6em;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+
+
+section article img {
+    width: 35em;
+    margin-top: -145px;
+    transition: 0.3s;
+}
+
+section article img:hover {
+    width: 37em;
+    transform: rotate(2deg);
+}
+
+@media (max-width: 1500px) {
+    section article img {
+        width: 27em;
+    }
+    section article img:hover {
+        transform: none;
+        width: 27em;
+    }
+    .contener h2 {
+        font-size: 3.5rem;
+        margin-top: -50px;
+    }
+    .contener p {
+        font-size: 1.3rem;
+    }
+    body {
+        background-size: 40%;
+        background-position: -146px 600px;
+    }
+    section {
+        margin-top: 325px;
+        margin-left: 20px;
+    }
+    header {
+        margin: 5px;
+    }
+    nav ul li a {
+        padding: 10px 20px;
+        font-weight: 600;
+    }
+    .main {
+        margin-top: 7%;
+        padding: 45px;
+        padding-top: 55px;
+    }
+}
+
+
+
+
+
+@media (max-width: 655px) {
+    section article img {
+        width: 20em;
+    }
+    section article img:hover {
+        transform: none;
+        width: 20em;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0px;
+
+    }
+    h1 {
+        margin-left: -10px;
+    }
+    .contener {
+        margin-left: 20px;
+    }
+    .contener h2 {
+        font-size: 3rem;
+        margin-top: -250px;
+        margin-left: -70px;
+    }
+    .contener p {
+        font-size: 1.5rem;
+        margin-left: -60px;
+    }
+    body {
+        background-size: 0;
+        background-position: -145px 580px;
+    }
+    section {
+        margin-top: 325px;
+        margin-left: 20px;
+    }
+    header {
+        margin: 5px;
+    }
+    nav ul li a {
+        padding: 10px 20px;
+        font-weight: 600;
+    }
+    .main {
+        margin-top: 13%;
+        padding: 45px;
+        padding-top: 55px;
+        height: 80%;
+        width: 92%;
+    }
+    nav ul li {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 655px) and (max-width: 767px) {
+    section article img {
+        width: 30em;
+    }
+    section article img:hover {
+        transform: none;
+        width: 30em;
+    }
+    body {
+        background-size: 0;
+    }
+    section {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 200px 20px;
+
+    }
+    h1 {
+        margin-left: -10px;
+    }
+    .contener {
+        margin-top: 300px;
+        margin-left: -200px;
+        width: 300px;
+    }
+
+    .contener h2 {
+        font-size: 3rem;
+        margin-top: -250px;
+    }
+    .contener p {
+        font-size: 1.5rem;
+    }
+    nav ul li {
+        visibility: hidden;
+    }
+
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1100px) {
+    section article img {
+        width: 27em;
+    }
+    section article img:hover {
+        transform: none;
+        width: 27em;
+    }
+    nav ul li {
+        visibility: hidden;
+    }
+    .contener {
+
+        justify-content: space-between;
+    }
+
+    .contener h2 {
+        font-size: 2.5rem;
+    }
+    .contener p {
+        font-size: 1.1rem;
+    }
+    body {
+        background-size: 400px;
+        background-position: -100px 650px;
+        position: absolute;
+        bottom: -10px;
+        height: 100vh;
+        width: 100vh;
+    }
+    nav ul li {
+        visibility: hidden;
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    section article img {
+        width: 25em;
+        margin-right: -85px;
+    }
+    section article img:hover {
+        transform: none;
+        width: 25em;
+    }
+    nav ul li {
+        visibility: hidden;
+    }
+    .contener {
+        margin-right: 10px;
+        margin-left: -20px;
+        width: 300px;
+    }
+    .contener h2 {
+        font-size: 2rem;
+    }
+    .contener p {
+        font-size: 1.1rem;
+    }
+    body {
+        background-size: 400px;
+        background-position: -100px 650px;
+
+   }
+
+}
+
+@media (max-height: 600px) {
+    section {
+        margin-top: 200px;
+    }
+    section article img {
+        width: 17em;
+    }
+    section article img:hover {
+        transform: none;
+        width: 17em;
+    }
+    .contener h2 {
+        font-size: 1.5rem;
+        margin-bottom: -10px;
+        margin-left: -10px;
+    }
+    .contener p {
+        font-size: 1rem;
+        margin-left: -5px;
+    }
+    .contener {
+        margin-top: -50px;
+    }
+    h1 {
+        font-size: 1.9em;
+        margin-left: -10px;
+    }
+    .main {
+        margin-left: 130px;
+        margin-top: -550px;
+    }
+
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: black;
+    border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: red;
+    border-radius: 30px;
+}
