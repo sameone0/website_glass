@@ -9,7 +9,6 @@ body {
     background-image: url(../image/Shape-background.png);
     background-repeat: no-repeat;
     background-position: -170px 350px;
-    overflow: hidden;
 }
 
 body ::selection {
